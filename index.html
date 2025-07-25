@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Class Notes</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Style -->
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Segoe UI", sans-serif;
+      color: #fff;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #0d1117;
+    }
+
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .python-code {
+      color: #0dcaf0;
+      font-family: monospace;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #222;
+      color: #0dcaf0;
+    }
+
+    .accordion-body {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    .accordion-item {
+      border: none;
+      margin-bottom: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    li {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Content -->
+  <div class="container">
+    <h1 class="text-center mb-5 text-warning">🧠 Python Class Notes (Interactive + Explained)</h1>
+
+    <div class="accordion" id="notesAccordion">
+
+      <!-- Day 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="day1Header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1"
+            aria-expanded="true" aria-controls="day1">
+            🔰 Day 1 – Introduction to Tools
+          </button>
+        </h2>
+        <div id="day1" class="accordion-collapse collapse show" aria-labelledby="day1Header"
+          data-bs-parent="#notesAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Dar in jalase ba <span class="python-code">Spyder</span> va <span class="python-code">Jupyter
+                  Notebook</span> ashna shodim.</li>
+              <li>Spyder yek IDE hast baraye Python ke barname nevisi ro asan mikone.</li>
+              <li>Jupyter Notebook be sorat celli code mizari va ejra mikoni. Baraye data science fogholade ast.</li>
+              <li>Kar jadidi anjam nashod. Jalase badi class shoru mishavad.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <!-- Day 2 (Style like Day 3) -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="day2Header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2"
+            aria-expanded="false" aria-controls="day2">
+            📦 Day 2 – Variables and Data Types
+          </button>
+        </h2>
+        <div id="day2" class="accordion-collapse collapse" aria-labelledby="day2Header"
+          data-bs-parent="#notesAccordion">
+          <div class="accordion-body">
+            <ul>
+
+              <li>
+                📝 Motaghayer (variable) yek esm baraye zakhire data ast:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+x = 5
+user_score = 90
+          </code></pre>
+              </li>
+
+              <li>
+                🐍 Estefade az <b>snake_case</b> baraye esm gozari:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+my_variable_name = "Hello"
+          </code></pre>
+              </li>
+
+              <li>
+                🖥️ Ejra kardan code ha dar Python be tore khati va radifi ast.
+              </li>
+
+              <li>
+                📢 Baraye chap kardan dar Python az <code>print()</code> estefade mikonim. <code>\n</code> baraye khat
+                jadid ast:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+print("Hello\nWorld")  # output:
+# Hello
+# World
+          </code></pre>
+              </li>
+
+              <li>
+                🔎 Baraye moshakhas kardan noe motaghayer az <code>type()</code> estefade konid:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+a = 5
+print(type(a))  # output: &lt;class 'int'&gt;
+
+b = 3.14
+print(type(b))  # output: &lt;class 'float'&gt;
+          </code></pre>
+              </li>
+
+              <li>
+                ➗ Fargh <code>/</code> va <code>//</code> dar Python:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+print(7 / 3)   # output: 2.3333333333333335 (decimal division)
+print(7 // 3)  # output: 2 (integer division, floor)
+          </code></pre>
+              </li>
+
+              <li>
+                🔄 Taghyir noe motaghayer:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+b = 5
+b = float(b)  # taghir be float
+print(type(b))  # output: &lt;class 'float'&gt;
+
+a = 3.7
+a = int(a)    # taghir be int (ghat konande)
+print(a)      # output: 3
+          </code></pre>
+              </li>
+
+              <li>
+                ✖️ Zarb dar khod ba estefade az operator haye mukhtalef:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+a = 4
+a *= 4  # a = a * 4
+print(a)  # output: 16
+          </code></pre>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Day 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="day3Header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day3"
+            aria-expanded="false" aria-controls="day3">
+            🧵 Day 3 – Strings and Methods
+          </button>
+        </h2>
+        <div id="day3" class="accordion-collapse collapse" aria-labelledby="day3Header"
+          data-bs-parent="#notesAccordion">
+          <div class="accordion-body">
+            <ul>
+
+              <li>
+                ➕ Jam kardan string ha ba <span class="python-code">+</span>:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+first = "Hello"
+second = "World"
+print(first + " " + second)  # output: Hello World
+              </code></pre>
+              </li>
+
+              <li>
+                🎯 Dastresi be harf khas:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+name = "Ali"
+print(name[0])  # output: A
+              </code></pre>
+              </li>
+
+              <li>
+                📏 Tool string:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "Hello123"
+print(len(text))  # output: 8
+              </code></pre>
+              </li>
+
+              <li>
+                ✂️ Boresh (slice):
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "Python"
+print(text[1:4])  # output: yth
+print(text[::2])  # output: Pto
+              </code></pre>
+              </li>
+
+              <li>
+                🔁 Taghir kalame:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "Hello Ali"
+print(text.replace("Ali", "Reza"))  # output: Hello Reza
+              </code></pre>
+              </li>
+
+              <li>
+                🔍 Jostojo dakhel string:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "welcome to python"
+print(text.find("python"))  # output: 11
+print(text.find("java"))    # output: -1
+              </code></pre>
+              </li>
+
+              <li>
+                🔠 Lowercase kardan:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "HELLO World 123!"
+print(text.lower())  # output: hello world 123!
+              </code></pre>
+              </li>
+
+              <li>
+                🔠 Uppercase kardan:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "hello world"
+print(text.upper())  # output: HELLO WORLD
+              </code></pre>
+              </li>
+
+              <li>
+                🔢 Count method:
+                <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "banana"
+print(text.count("a"))  # output: 3
+              </code></pre>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day4Header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4"
+      aria-expanded="false" aria-controls="day4">
+      📚 Day 4 – Lists & Methods
+    </button>
+  </h2>
+  <div id="day4" class="accordion-collapse collapse" aria-labelledby="day4Header"
+    data-bs-parent="#notesAccordion">
+    <div class="accordion-body">
+      <ul>
+        <li>
+          📋 (list) baraye list kardan item ha estefade mishe.
+        </li>
+        <li>
+          ➕ (append) baraye ezafe kardan item be list estefade mishe (eyn item be enteha ezafe mishe).
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+fruits = ["apple"]
+fruits.append("banana")
+print(fruits)  # ['apple', 'banana']
+          </code></pre>
+        </li>
+        <li>
+          ➕➕ (extend) mitone chand item ro be list ezafe kone (mitone list dige ro ham ezafe kone).
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+fruits = ["apple"]
+fruits.extend(["banana", "orange"])
+print(fruits)  # ['apple', 'banana', 'orange']
+          </code></pre>
+        </li>
+        <li>
+          🎯 (insert) baraye ezafe kardan item dar position khas estefade mishe.
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+fruits = ["apple", "orange"]
+fruits.insert(1, "banana")
+print(fruits)  # ['apple', 'banana', 'orange']
+          </code></pre>
+        </li>
+        <li>
+          ❌ (remove) baraye pak kardan item mokhtas az list estefade mishe.
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+fruits = ["apple", "banana"]
+fruits.remove("apple")
+print(fruits)  # ['banana']
+          </code></pre>
+        </li>
+        <li>
+          ❌ (pop) ham baraye pak kardan item az list estefade mishe (az enteha ya index khas).
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+fruits = ["apple", "banana"]
+fruits.pop()
+print(fruits)  # ['apple']
+          </code></pre>
+        </li>
+        <li>
+          🧹 (clear) tamam item ha ro az list pak mikone.
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+fruits = ["apple", "banana"]
+fruits.clear()
+print(fruits)  # []
+          </code></pre>
+        </li>
+        <li>
+          🔍 (index) baraye peyda kardan position avalin bar az item estefade mishe.
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+fruits = ["apple", "banana", "apple"]
+print(fruits.index("apple"))  # 0
+          </code></pre>
+        </li>
+        <li>
+          🔁 (reverse) baraye makoos kardan list estefade mishe.
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+fruits = ["apple", "banana"]
+fruits.reverse()
+print(fruits)  # ['banana', 'apple']
+          </code></pre>
+        </li>
+        <li>
+          🔢 (sort) baraye moratab kardan list estefade mishe.
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+numbers = [5, 2, 9, 1]
+numbers.sort()
+print(numbers)  # [1, 2, 5, 9]
+          </code></pre>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Day 5 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day5Header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day5"
+      aria-expanded="false" aria-controls="day5">
+      🔹 Day 5 – Tuple, split, partition, join, and range
+    </button>
+  </h2>
+  <div id="day5" class="accordion-collapse collapse" aria-labelledby="day5Header" data-bs-parent="#notesAccordion">
+    <div class="accordion-body">
+      <ul>
+
+        <li>
+          📦 <b>Tuple</b> dar Python ye noe sakhtare dade hast ke mesle list ast vali chand tafavot dare, mesle amniyat bala va ghabele taghir nist.
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+my_tuple = (1, 2, 3)
+print(my_tuple[0])  # output: 1
+# Tuple ha ghabele taghir nistand (immutable)
+          </code></pre>
+        </li>
+
+        <li>
+          🔢 <b>count()</b> dar tuple mesle list kar mikone, tedad baramad har item ro mide:
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+t = (1, 2, 2, 3)
+print(t.count(2))  # output: 2
+          </code></pre>
+        </li>
+
+        <li>
+          ✂️ <b>split()</b> metod e ke ye string ro be ghesmat-haye kuchiktar (list) tabdil mikone bar asas ye karakter ya fasele:
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "hello world python"
+words = text.split(" ")  # ya faghat split() ham mishe
+print(words)  # output: ['hello', 'world', 'python']
+          </code></pre>
+        </li>
+
+        <li>
+          🪟 <b>partition()</b> ham mesle split hast vali faghat 3 ghesmat mide: ghesmate ghabli, separator, ghesmate akhar.
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+text = "hello-world-python"
+parts = text.partition("-")
+print(parts)  # output: ('hello', '-', 'world-python')
+          </code></pre>
+        </li>
+
+        <li>
+          🔗 <b>join()</b> ye list az string-ha ro migire va ba ye karakter (ya string) vasat be yek string vasl mikone:
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+words = ['hello', 'world', 'python']
+joined = " ".join(words)
+print(joined)  # output: hello world python
+          </code></pre>
+        </li>
+
+        <li>
+          🔢 <b>range()</b> ye tool baraye sakhtane sequence az adad ast ke bishtar too loop ha estefade mishe:
+          <pre class="bg-dark text-light p-2 rounded"><code class="python-code">
+for i in range(5):
+    print(i)
+# output: 0 1 2 3 4
+          </code></pre>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </div>
+    
+
+  </div>
+ <div class="text-center mt-4">
+  <button class="btn btn-success btn-lg" onclick="window.location.href='https://extraordinary-tanuki-3ae3b1.netlify.app/'">
+    Test Python Code Here 🐍
+  </button>
+</div>
+
+
+  <script>
+    function openPythonTester() {
+      window.open("https://replit.com/languages/python3", "_blank");
+    }
+  </script>
+
+
+  <!-- JavaScript -->
+  <script>
+    function motivationalQuote() {
+      const quotes = [
+        "Code like a pro 💻!",
+        "You are one step closer to becoming a Pythonista 🐍!",
+        "Keep learning, keep growing! 🌱",
+        "Python is power. Use it wisely 💡",
+        "Never give up. Even bugs give up first 😄"
+      ];
+      alert(quotes[Math.floor(Math.random() * quotes.length)]);
+    }
+  </script>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        move: { enable: true, speed: 2 }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
